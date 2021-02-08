@@ -1,0 +1,14 @@
+#texto {
+    background: -webkit-linear-gradient(rgb(230, 230, 86),rgb(151, 51, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: darkgrey;
+}
+
+li{
+    color: darkgrey;
+}
+
+h2{
+    color: darkgrey;
+}

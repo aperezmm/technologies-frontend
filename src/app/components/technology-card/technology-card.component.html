@@ -1,0 +1,20 @@
+<div class="card-columns text-center">
+  <img
+    [src]="technology.logo"
+    [alt]="technology.name"
+    class="card-img-top img-fluid"
+    style="width: 10%"
+    />
+  <div class="card-body">
+    <h4 class="card-title">{{ technology.name }}</h4>
+    <p class="card-text">{{ technology.description }}</p>
+    <p class="card-text">
+      <small class="text-muted" *ngFor="let tag of technology.tags"></small>
+      <a href="#">{{technology.tags}}</a>
+    </p>
+    <a [routerLink]="['/technology', technology._id]" class="btn btn-dark"
+      id="seemore">
+      See more...</a>
+    <hr>
+  </div>
+</div>

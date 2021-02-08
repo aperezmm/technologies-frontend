@@ -1,0 +1,6 @@
+#texto {
+    background: -webkit-linear-gradient(rgb(186, 201, 150),rgb(235, 109, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(46, 45, 45);
+}

@@ -1,0 +1,20 @@
+<h2 id="texto">{{technology.name | uppercase}}
+    <strong>{{technology.createdAt | date: "y"}}</strong>
+</h2>
+<hr>
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img [src]="technology.logo" [alt]="technology.name" class="img-fluid">
+        <br>
+        <br>
+        <a [routerLink]="['/technologies']" class="btn btn-outline-danger btn-block">
+            Go back
+        </a>
+    </div>
+    <div class="col-md-8">
+        <h3 id="texto">{{technology.name}}</h3>
+        <hr>
+        <p>{{technology.description}}</p>
+        <p *ngFor="let tag of technology.tags">{{tag}}</p>
+    </div>
+</div>
